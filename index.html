@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-MOON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="header">🌙 E-MOON</header>
+
+<!-- HOME -->
+<section id="home" class="page">
+  <h2>Space Library 🚀</h2>
+  <button onclick="go('store')">📚 Store</button>
+  <button onclick="go('profile')">👨‍🚀 Profile</button>
+</section>
+
+<!-- STORE -->
+<section id="store" class="page hidden">
+  <h2>📚 Ebook Store</h2>
+  <div id="bookList"></div>
+  <button onclick="go('home')">⬅ Back</button>
+</section>
+
+<!-- READER -->
+<section id="reader" class="page hidden">
+  <h2>📖 Reader</h2>
+  <iframe id="readerFrame"></iframe>
+  <button onclick="go('store')">⬅ Back</button>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="page hidden">
+  <h2>👨‍🚀 Profile</h2>
+  <p>Referral Code:</p>
+  <h3 id="refCode"></h3>
+  <p>Earnings: ₹<span id="earnings">0</span></p>
+  <button onclick="go('home')">⬅ Back</button>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
